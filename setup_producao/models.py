@@ -9,3 +9,6 @@ class Setup(models.Model):
     tipo_de_camera = models.CharField(max_length=100)
     tipo_de_microfone = models.CharField(max_length=100)
     iluminacao = models.TextField(max_length=450)
+
+    class  Meta: 
+        verbose_name_plural  =  "Setup e equipamentos"

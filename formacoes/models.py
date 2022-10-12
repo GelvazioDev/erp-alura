@@ -14,3 +14,9 @@ class Formacao(models.Model):
     descricao_passo_2 = models.TextField(max_length=450, default='')
     descricao_passo_3 = models.TextField(max_length=450, default='')
     status = models.CharField(max_length=3, choices=STATUS_DA_FORMACAO, blank=False, null=False, default='1')
+
+    def __str__(self):
+        return self.titulo
+
+    class  Meta: 
+        verbose_name_plural  =  "Formações"

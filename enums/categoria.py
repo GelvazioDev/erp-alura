@@ -1,0 +1,1 @@
+CATEGORIA_DO_CURSO = (('0', '---'), ('1', 'ANGULAR'), ('2', 'AUTOMAÇÃO E PERFORMANCE'), ('3', 'FRAMEWORK MVC'), ('4', 'HTML E CSS'), ('5', 'JAVASCRIPT'), ('6', 'JQUERY'), ('7', 'REACT'), ('8', 'WORDPRESS'))
