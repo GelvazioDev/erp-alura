@@ -5,7 +5,7 @@ class Ideia(models.Model):
     detalhes = models.TextField(max_length=500)
 
     def __str__(self):
-        return self.tituideia_em_poucas_palavras
+        return self.ideia_em_poucas_palavras
 
     class  Meta: 
         verbose_name_plural  =  "Tem uma ideia? Que tal anotar!"
