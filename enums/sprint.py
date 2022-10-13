@@ -1,0 +1,1 @@
+SPRINT_ENUM = (('P', 'Pausado'),('A', 'Andamento'),('F', 'Finalizado'),)

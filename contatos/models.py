@@ -5,6 +5,10 @@ class Contato(models.Model):
     nome = models.CharField(max_length=100)
     email = models.CharField(max_length=100)
     cargo = models.CharField(max_length=20, choices=TIPOS_DE_CARGOS, blank=False, null=False,default='0')
+    # telefone 
+    # endereco
+    # carga horaria
+
 
     def __str__(self):
         return self.nome
