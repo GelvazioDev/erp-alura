@@ -1,0 +1,1 @@
+TIPOS_DE_CARGOS = (('0', '---'),('1', 'Scuba'),('2', 'Instrutor Jr'),('3', 'Instrutor'),('4', 'Web writing'),('5', 'Didática'),('6', 'Designer'),('7', 'Editor'),('8', 'Produção'),('9', 'Scrum Master'),('10', 'Product Owner'),('11', 'Tech Lead'),('12', 'Madrinha/Padrinho'))
