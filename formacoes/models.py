@@ -7,7 +7,6 @@ class Formacao(models.Model):
     
     titullo = models.CharField(max_length=50)
     descricao = models.TextField(max_length=450)
-    projeto = models.ForeignKey(Figma, on_delete=models.CASCADE, related_name='projeto')
     quantidade_de_cursos = models.IntegerField(default=0)
     cursos = models.ManyToManyField(Curso)
     descricao_passo_1 = models.TextField(max_length=450, default='')

@@ -1,4 +1,3 @@
-from email.policy import default
 from django.db import models
 from instrutores.models import Instrutor
 from figma.models import Figma
