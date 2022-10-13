@@ -7,7 +7,6 @@ from enums.status_curso import STATUS
 
 class Curso(models.Model):
     # inserir sprint JAN/ano
-    # alterar status para roteito/edição/transcrição
     # sprint = models.DateField()
     nome = models.CharField(max_length=50)
     id_do_curso = models.IntegerField(default=0000, validators=[MaxValueValidator(99999),MinValueValidator(0000)])

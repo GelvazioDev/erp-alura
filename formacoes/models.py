@@ -3,15 +3,11 @@ from figma.models import Figma
 from cursos.models import Curso
 
 class Formacao(models.Model):
+    # https://docs.google.com/spreadsheets/d/1hZdARQ9g7T9yfJtVA9VWRfNPXUTf2Du6XP5TMM2Lphg/edit#gid=0
     STATUS_DA_FORMACAO = (('1', 'Planejamento'),('2', 'Early Access'),('3', 'Finalizada'),)
     
     titullo = models.CharField(max_length=50)
-    descricao = models.TextField(max_length=450)
-    quantidade_de_cursos = models.IntegerField(default=0)
     cursos = models.ManyToManyField(Curso)
-    descricao_passo_1 = models.TextField(max_length=450, default='')
-    descricao_passo_2 = models.TextField(max_length=450, default='')
-    descricao_passo_3 = models.TextField(max_length=450, default='')
     status = models.CharField(max_length=3, choices=STATUS_DA_FORMACAO, blank=False, null=False, default='1')
 
     def __str__(self):
