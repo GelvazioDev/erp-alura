@@ -14,6 +14,7 @@ class Curso(models.Model):
     instrutor = models.ForeignKey(Instrutor, on_delete=models.CASCADE)
     projeto = models.ForeignKey(Figma, on_delete=models.CASCADE)
     descricao = models.TextField(max_length=450)
+    pasta_do_curso = models.URLField(blank=True, null=True)
     github = models.URLField()
     status = models.CharField(max_length=1, choices=STATUS, blank=False, null=False, default='P')
 
