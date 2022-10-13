@@ -21,5 +21,5 @@ class Curso(models.Model):
         return self.nome
 
     class  Meta: 
-        verbose_name_plural  =  'Cursos'
+        verbose_name_plural = 'Cursos'
         
