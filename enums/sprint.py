@@ -1,1 +1,1 @@
-SPRINT_ENUM = (('P', 'Pausado'),('A', 'Andamento'),('F', 'Finalizado'),)
+TRIMESTRE = (('1', '1T'),('2', '2T'),('3', '3T'),('4', '4T'),)
