@@ -7,7 +7,7 @@ class FigmaAdmin(admin.ModelAdmin):
     list_display = ('id','nome', 'descricao', 'link_figma_url', 'mobile', 'status',)
     list_display_links = ('id', 'nome', 'link_figma_url',)
     search_fields = ('nome',)
-    list_filter = ('status', )
+    list_filter = ('status', 'mobile',)
     list_editable = ('status',)
     list_per_page = 25
 

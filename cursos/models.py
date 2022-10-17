@@ -12,7 +12,7 @@ class Curso(models.Model):
     id_do_curso = models.IntegerField(default=0000, validators=[MaxValueValidator(99999),MinValueValidator(0000)])
     categoria = models.CharField(max_length=1, choices=CATEGORIA_DO_CURSO, blank=False, null=False, default='0')
     instrutor = models.ForeignKey(Instrutor, on_delete=models.CASCADE)
-    projeto = models.ForeignKey(Figma, on_delete=models.CASCADE)
+    projeto = models.ForeignKey(Figma, on_delete=models.CASCADE, null=True, blank=True)
     descricao = models.TextField(max_length=450)
     pasta_do_curso = models.URLField(blank=True, null=True)
     github = models.URLField()
