@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'setup_producao',
     'contatos',
     'ideias_de_projetos',
+    'import_export',
 ]
 
 MIDDLEWARE = [
